@@ -168,7 +168,6 @@ p {
 .contact {
   display: flex;
   justify-content: space-between;
-  padding: 75px;
   background-color: rgb(65, 143, 174);
   color: white;
 }
@@ -177,6 +176,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: 75px 0 75px 75px;
 }
 
 .contact .icons {
@@ -204,4 +204,31 @@ video {
   width: 50%;
   height: auto;
   display: block;
+  padding: 75px 75px 75px 0;
+}
+
+@media (max-width: 1024px) {
+  video {
+    width: 50%;
+    height: auto;
+    display: block;
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+/* mobile: full width */
+@media (max-width: 600px) {
+  .contact {
+    flex-direction: column; /* stack text + video vertically */
+  }
+
+  .contact-info {
+    padding: 1rem;
+  }
+
+  video {
+    width: 100%; /* full width */
+    margin-top: 1rem; /* optional spacing */
+    padding: 0;
+  }
 }
