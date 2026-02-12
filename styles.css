@@ -28,9 +28,27 @@ h3 {
   position: relative;
 }
 
+.about-photo-wrapper {
+  position: relative; /* allows absolute positioning inside */
+  width: 350px; /* same size as your photo so it matches */
+}
+
 .about-photo {
-  width: 300px;
+  width: 350px;
   height: auto;
+}
+
+.photo-name {
+  position: absolute;
+  bottom: 0; /* puts it at the bottom */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 2.4rem; /* adjust size as needed */
+  font-family:
+    "Playfair Display", serif; /* keep consistent with heading style */
+  color: rgb(255, 255, 255); /* matching your theme color */
 }
 
 .about-text {
