@@ -139,7 +139,7 @@ p {
 
 @media (max-width: 600px) {
   .my-work {
-    padding: 2rem 1rem; /* much smaller horizontal padding */
+    padding: 0;
   }
   .my-work h2 {
     text-align: center;
