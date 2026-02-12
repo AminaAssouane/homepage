@@ -18,6 +18,10 @@ header {
   width: auto;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 /* Projects */
 
 .my-work {
