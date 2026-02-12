@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-/*body {
-  padding: 50px;
-}*/
+/* About me */
 
 header {
   display: flex;
@@ -19,6 +17,8 @@ header {
   height: 400px;
   width: auto;
 }
+
+/* Projects */
 
 .my-work {
   padding: 50px;
@@ -41,6 +41,17 @@ header {
     grid-template-columns: 1fr;
   }
 }
+
+.project-title {
+  display: flex;
+}
+
+.project-icon {
+  height: 20px;
+  width: 20px;
+}
+
+/* Contact */
 
 .contact {
   padding: 50px;
