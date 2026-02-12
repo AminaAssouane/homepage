@@ -138,12 +138,14 @@ p {
 }
 
 @media (max-width: 600px) {
+  .my-work {
+    padding: 2rem 1rem; /* much smaller horizontal padding */
+  }
   .my-work h2 {
     text-align: center;
   }
   .projects {
     grid-template-columns: 1fr;
-    justify-items: center;
   }
   .photo-name {
     text-align: start;
