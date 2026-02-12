@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 body {
@@ -139,13 +140,14 @@ p {
 
 @media (max-width: 600px) {
   .my-work {
-    padding: 0;
+    padding: 2rem 1rem;
   }
   .my-work h2 {
     text-align: center;
   }
   .projects {
     grid-template-columns: 1fr;
+    justify-items: stretch; /* not center */
   }
   .photo-name {
     text-align: start;
