@@ -6,16 +6,37 @@
 
 /* About me */
 
-header {
-  display: flex;
+.about {
   background-color: rgb(65, 143, 174);
   clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
   padding: 50px;
 }
 
-#aboutmeimg {
-  height: 400px;
-  width: auto;
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.about-photo {
+  width: 300px;
+  height: auto;
+}
+
+.about-text {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: -30px; /* makes it “pop out” from image */
+}
+
+.about-icon {
+  height: 30px;
+  width: 30px;
+  margin-top: 1rem;
 }
 
 .clickable {
@@ -98,7 +119,8 @@ header {
 
 .icons {
   display: flex;
-  gap: 10px;
+  gap: 1rem;
+  justify-content: flex-end;
 }
 
 .project-icon {
