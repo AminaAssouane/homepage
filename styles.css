@@ -147,7 +147,6 @@ p {
   }
   .projects {
     grid-template-columns: 1fr;
-    justify-items: stretch; /* not center */
   }
   .photo-name {
     text-align: start;
