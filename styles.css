@@ -4,5 +4,51 @@
   box-sizing: border-box;
 }
 
+/*body {
+  padding: 50px;
+}*/
+
 header {
+  display: flex;
+  background-color: rgb(65, 143, 174);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+  padding: 50px;
+}
+
+#aboutmeimg {
+  height: 400px;
+  width: auto;
+}
+
+.my-work {
+  padding: 50px;
+}
+
+.projects {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 1024px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact {
+  padding: 50px;
+  background-color: rgb(65, 143, 174);
+}
+
+video {
+  width: 50%;
+  height: auto;
+  display: block;
 }
