@@ -16,9 +16,21 @@ h3 {
 /* About me */
 
 .about {
+  position: relative;
+  padding: 75px;
+  overflow: hidden; /* prevents clipping content outside */
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgb(65, 143, 174);
   clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
-  padding: 75px;
+  z-index: -1; /* behind content */
 }
 
 .about-container {
@@ -26,6 +38,16 @@ h3 {
   align-items: center;
   padding: 4rem 0;
   position: relative;
+}
+
+@media (max-width: 600px) {
+  .about::before {
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 50%);
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .about-photo-wrapper {
@@ -113,6 +135,7 @@ p {
   justify-content: center;
   height: 300px;
   color: white;
+  padding: 20px;
   font-size: 55px;
   text-align: center;
 }
