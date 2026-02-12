@@ -143,6 +143,7 @@ p {
   }
   .projects {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
   .photo-name {
     text-align: start;
